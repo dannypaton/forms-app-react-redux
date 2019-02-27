@@ -1,0 +1,55 @@
+@import '_normalize.styl'
+
+h2
+  margin-bottom 40px
+a
+  display flex
+  justify-content center
+  margin 10px
+  text-decoration none
+  padding 10px
+  border 2px solid black
+  
+a:visited
+    color darkblue
+
+.button 
+  color white
+  text-align center
+  text-shadow 0 1px 2px rgba(0, 0, 0, 0.25)
+  background #3498db
+  border 0
+  border-bottom 2px solid #2a8bcc
+  cursor pointer
+  -webkit-box-shadow inset 0 -2px #2a8bcc
+  box-shadow inset 0 -2px #2a8bcc
+
+.button:active 
+  top 1px
+  outline none
+  -webkit-box-shadow none
+  box-shadow none
+
+.formMain
+  display flex
+  flex-direction column
+  align-items center
+  h1 
+    a
+      border none
+ 
+.formOne
+.formTwo
+  max-width 1200px
+  @media (max-width:668px)
+    width 80%
+  .form
+    @media (max-width:668px)
+      display flex
+      flex-direction column
+    input
+      padding 10px
+      margin 40px 5px
+      @media (max-width:668px)
+        margin 10px auto
+        width 100%
