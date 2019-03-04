@@ -8,6 +8,7 @@ const Main = React.createClass({
         <h1>
           <Link to="/">React / Redux Forms</Link>
         </h1>
+        {/* take any props that are coming down parent components and pass them along to child components */}
         {React.cloneElement({ ...this.props }.children, { ...this.props })}
       </div>
     )

@@ -1,4 +1,4 @@
-// default state variable
+// create default state variable
 const initialState = {
   firstName: '',
   lastName: ''

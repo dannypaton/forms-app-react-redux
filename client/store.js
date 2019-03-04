@@ -1,10 +1,12 @@
 import { createStore, compose } from 'redux';
+// hook up react router with redux
 import { syncHistoryWithStore } from 'react-router-redux';
 import { browserHistory } from 'react-router';
 
 // import the root reducer
 import rootReducer from './reducers/index';
 
+// import default data
 import formOneSubmitted from './data/formOneSubmitted';
 import formTwoSubmitted from './data/formTwoSubmitted';
 
@@ -19,6 +21,7 @@ const enhancers = compose(
   window.devToolsExtension ? window.devToolsExtension() : f => f 
 );
 
+// create store (object to hold our information)
 const store = createStore(rootReducer, defaultState, enhancers);
 
 export const history = syncHistoryWithStore(browserHistory, store);

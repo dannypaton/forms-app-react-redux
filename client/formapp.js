@@ -12,11 +12,14 @@ import FormTwo from './components/FormTwo';
 
 // import react router deps
 import { Router, Route, IndexRoute } from 'react-router';
+// binding that allows us to use redux with react
 import { Provider } from 'react-redux';
 import store, { history } from './store';
 
 // router component
 const router = (
+  // provider component listens to the store
+  // expose store to rest of application
   <Provider store={store}>
     <Router history={history}>
       <Route path="/" component={App}>
